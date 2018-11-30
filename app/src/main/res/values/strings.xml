@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">AdminRestoran</string>
+    <string name="app_name">Admin Restoran</string>
+    <string name="main_name">Admin restoran</string>
 </resources>
