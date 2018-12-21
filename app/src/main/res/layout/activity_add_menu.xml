@@ -8,24 +8,60 @@
     android:padding="16dp"
     tools:context=".activity.AddMenuActivity">
 
-    <ru.dimorinny.floatingtextbutton.FloatingTextButton
-        android:id="@+id/fab1"
-        android:layout_width="wrap_content"
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="4dp"-->
+        <!--android:scrollbars="vertical"-->
+        <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        app:backgroundTint="@android:color/white"
-        app:fabSize="normal"
-        app:floating_background_color="@color/colorPrimary"
-        app:floating_title_color="@android:color/white"
-        app:floating_left_icon="@drawable/ic_edit"
-        app:floating_title="Edit Menu" />
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_all_menu"
+                android:layout_width="329dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <!--<ru.dimorinny.floatingtextbutton.FloatingTextButton-->
+        <!--android:id="@+id/fab1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right|bottom"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:backgroundTint="@android:color/white"-->
+        <!--app:fabSize="normal"-->
+        <!--app:floating_background_color="@color/colorPrimary"-->
+        <!--app:floating_title_color="@android:color/white"-->
+        <!--app:floating_left_icon="@drawable/ic_edit"-->
+        <!--app:floating_title="Edit Menu" />-->
 
     <ru.dimorinny.floatingtextbutton.FloatingTextButton
         android:id="@+id/fab2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left|bottom"
+        android:layout_gravity="center|bottom"
         android:layout_margin="@dimen/fab_margin"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
@@ -37,62 +73,9 @@
         app:floating_background_color="@color/colorPrimary"
         app:floating_left_icon="@drawable/ic_add_menu"
         app:floating_title="Add Menu"
-        app:layout_anchor="@id/fab1"
         app:floating_title_color="@android:color/white"
-        app:layout_anchorGravity="top|end"/>
+        />
 
-
-
-    <!--<android.support.design.widget.CoordinatorLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
-
-        <!--<android.support.design.widget.FloatingActionButton-->
-        <!--android:id="@+id/fab1"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="bottom|end"-->
-        <!--android:layout_margin="@dimen/fab_margin"-->
-        <!--android:src="@drawable/ic_add_menu"-->
-        <!--app:fabSize="normal"-->
-        <!--app:backgroundTint="@color/colorAccent" />-->
-
-        <!--<android.support.design.widget.FloatingActionButton-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content" />-->
-        <!--android:id="@+id/fab2"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="top|end"-->
-        <!--android:layout_marginStart="0dp"-->
-        <!--android:layout_marginLeft="0dp"-->
-        <!--android:layout_marginTop="0dp"-->
-        <!--android:layout_marginEnd="0dp"-->
-        <!--android:layout_marginRight="0dp"-->
-        <!--android:layout_marginBottom="100dp"-->
-        <!--android:src="@drawable/ic_edit"-->
-        <!--app:layout_anchor="@id/fab1"-->
-        <!--app:fabSize="normal"-->
-        <!--app:layout_anchorGravity="top" />-->
-
-
-    <!--</android.support.design.widget.CoordinatorLayout>-->
-
-
-
-
-<!--<io.github.yavski.fabspeeddial.FabSpeedDial-->
-    <!--android:id="@+id/fabSpeedDial"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="bottom|end"-->
-    <!--app:fabGravity="bottom_end"-->
-    <!--app:fabMenu="@menu/main_menu"-->
-    <!--app:miniFabBackgroundTint="@android:color/white"-->
-    <!--app:miniFabDrawableTint="?attr/colorPrimaryDark"-->
-    <!--app:miniFabTitleTextColor="?attr/colorPrimaryDark">-->
-
-    <!--</io.github.yavski.fabspeeddial.FabSpeedDial>-->
 
 
 </FrameLayout>
