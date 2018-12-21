@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.agastyaharta.adminrestoran.R;
+import com.example.agastyaharta.adminrestoran.api.API;
 import com.example.agastyaharta.adminrestoran.api.Value;
 
 import retrofit2.Call;
@@ -62,21 +63,21 @@ public class EditMenuActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         API api = retrofit.create(API.class);
-        Call<Value> call = api.editMenu(namaEdit, emailPelanggan, usernamePelanggan);
+        Call<Value> call = api.editMenu(namaEdit, hargaEdit, deskripsiEdit);
         call.enqueue(new Callback<Value>() {
             @Override
             public void onResponse(Call<Value> call, Response<Value> response) {
                 Boolean success = response.body().getSuccess();
                 if(success){
-                    Toast.makeText(DetailProfilActivity.this, "Berhasil", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditMenuActivity.this, "Berhasil", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(DetailProfilActivity.this, "Gagal", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditMenuActivity.this, "Gagal", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<Value> call, Throwable t) {
-                Toast.makeText(DetailProfilActivity.this, "Gagal", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditMenuActivity.this, "Gagal", Toast.LENGTH_SHORT).show();
             }
         });
     }
