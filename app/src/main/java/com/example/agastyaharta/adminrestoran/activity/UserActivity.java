@@ -2,6 +2,7 @@ package com.example.agastyaharta.adminrestoran.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.agastyaharta.adminrestoran.R;
 
 public class UserActivity extends AppCompatActivity {
 

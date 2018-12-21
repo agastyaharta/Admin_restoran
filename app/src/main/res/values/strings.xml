@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Admin Restoran</string>
     <string name="main_name">Admin restoran</string>
+    <string name="title_activity_add_menu">AddMenuActivity</string>
+
+    <string-array name="kategori">
+        <item>Burger</item>
+        <item>Salad</item>
+        <item>Minuman</item>
+        <item>Dessert</item>
+        <item>Breakfast </item>
+    </string-array>
+
 </resources>

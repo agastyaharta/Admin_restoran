@@ -1,11 +1,11 @@
-package com.example.agastyaharta.adminrestoran;
+package com.example.agastyaharta.adminrestoran.model;
 
 import java.sql.Blob;
 
 
 public class Hidangan {
     public static final String TABLE_NAME = "tb_hidangan";
-    public  static  final String COLUMN_ID = "id_hidangan";
+    public  static final String COLUMN_ID = "id_hidangan";
     public  static final String COLUMN_NAMA = "nama_hidangan";
     public  static final String COLUMN_DESKRIPSI = "deskripsi_hidangan";
     public  static final String COLUMN_HARGA = "harga_hidangan";
@@ -53,13 +53,6 @@ public class Hidangan {
         this.harga_hidangan = harga_hidangan;
     }
 
-    public String getFoto_hidangan() {
-        return foto_hidangan;
-    }
-
-    public void setFoto_hidangan(String foto_hidangan) {
-        this.foto_hidangan = foto_hidangan;
-    }
 
     public String getKategori_hidangan() {
         return kategori_hidangan;
